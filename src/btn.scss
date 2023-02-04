@@ -17,33 +17,32 @@
         flex-wrap: wrap;
         margin: 20px;
         border: 1px solid white;
-        padding: 25px;
+        padding: 20px;
         border-radius: 5px;
         background-color: #191919;
         box-shadow: 10px 10px 23px rgba(0, 0, 0, 0.637);
 
         div {
-            // border: 1px solid rgba(54, 57, 57, 0.336);
             padding: 3px 10px;
-            margin: 4px;
+            margin: 2px;
         }
 
         div>label {
             color: #f7f7f7;
-            margin: 5px;
+            margin: 4px;
             font-size: 1.2rem;
             font-family: 'Poppins', sans-serif;
         }
 
         div>input {
             width: 150px;
-            margin: 5px;
-            font-size: 1.2rem;
-            padding: 2px;
+            margin: 6px;
+            font-size: 1rem;
+            padding: 4px;
             border-radius: 5px;
             border: 1px solid rgb(36, 143, 250);
             background-color: #242424;
-            color: white;
+            color: rgb(12, 206, 249);
         }
     }
 
