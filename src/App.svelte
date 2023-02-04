@@ -10,8 +10,8 @@
     bgColor = "#fff",
     color = "#000",
     fontSize = 20,
-    boxShadowX = 0,
-    boxShadowY = 0,
+    boxShadowX = 4,
+    boxShadowY = 4,
     boxShadowColor = "#000",
     boxShadowBlur = 0;
   let k = 0;
