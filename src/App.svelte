@@ -14,11 +14,18 @@
     boxShadowY = 4,
     boxShadowColor = "#000",
     boxShadowBlur = 0;
-  let k = 0;
+  let k = 0,
+    m = 0;
   let handleClick = () => {
     k = 1;
     setTimeout(() => {
       k = 0;
+    }, 800);
+  };
+  let handleClickInLine = () => {
+    m = 1;
+    setTimeout(() => {
+      m = 0;
     }, 800);
   };
   $: copyText =
@@ -42,6 +49,9 @@
     "</" +
     "style" +
     ">";
+  $: inLineText = `
+    <button  style="padding:${padding}px;margin:${margin}px;border:${border}px solid ${borderColor};border-radius:${borderRadius}px;background-color:${bgColor};color:${color};font-size:${fontSize}px;box-shadow:${boxShadowX}px ${boxShadowY}px ${boxShadowBlur}px ${boxShadowColor};">${text}</button>
+    `;
 </script>
 
 <main>
@@ -114,6 +124,11 @@
       </div>
       <button class="btn-copy" on:click={handleClick} use:copy={copyText}
         >{k === 0 ? "Copy Code" : "Copied"}</button
+      >
+      <button
+        class="btn-copy"
+        on:click={handleClickInLine}
+        use:copy={inLineText}>{m === 0 ? "Inline Css" : "Copied "}</button
       >
     </div>
   </div>
